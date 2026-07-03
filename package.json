@@ -1,21 +1,19 @@
 {
-  "name": "acolhe-server",
-  "version": "1.0.0",
+  "name": "acolhe-web",
   "private": true,
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@google/genai": "^1.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1"
+    "@google/genai": "^1.52.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
   },
-  "allowScripts": {
-    "@google/genai@1.52.0": true,
-    "protobufjs@7.6.4": true
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.4.0"
   }
 }

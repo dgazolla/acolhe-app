@@ -1,9 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "index.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "vite --port 3001",
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
